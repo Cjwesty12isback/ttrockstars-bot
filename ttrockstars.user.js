@@ -39,7 +39,7 @@
                 return;
             }
             // start running
-            running = true;
+            running = false;
             // add "hacks enabled" message
             let el = document.createElement("a");
             el.setAttribute("href", "https://github.com/jibstack64/ttrockstars-bot");
@@ -48,7 +48,6 @@
                 top.children[i].remove()
             }
             el.style = "background-color: black; color: greenyellow; width: auto;align-items: center;margin-top: 10px;margin-bottom: 10px;padding: 5px;border: 2px solid red; font-size: 20px; font-style: bold; font-family: monospace;";
-            el.innerHTML = "🤖 BOT ENABLED 🔥";
             top.appendChild(el);
     
             var id = setInterval(() => {
